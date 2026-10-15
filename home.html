@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVOR | Restaurant Management System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #171717;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: #101010;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #e8b45b;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #e8b45b;
+        }
+
+        .login-btn {
+            background: #e8b45b;
+            color: #171717;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .login-btn:hover {
+            background: #f5ca7d;
+            color: #171717;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            padding: 70px 10%;
+            background: linear-gradient(120deg, #171717, #392c1c);
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero-content h4 {
+            color: #e8b45b;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .hero-content h1 {
+            font-size: 55px;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        .hero-content h1 span {
+            color: #e8b45b;
+        }
+
+        .hero-content p {
+            color: #cccccc;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 26px;
+            background: #e8b45b;
+            color: #171717;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+
+        .btn:hover {
+            background: #f5ca7d;
+        }
+
+        .secondary-btn {
+            background: transparent;
+            color: white;
+            border: 1px solid #e8b45b;
+        }
+
+        .secondary-btn:hover {
+            background: #e8b45b;
+            color: #171717;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .features h2 span {
+            color: #e8b45b;
+        }
+
+        .section-text {
+            color: #aaa;
+            margin-bottom: 35px;
+        }
+
+        .feature-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 22px;
+        }
+
+        .card {
+            background: #252525;
+            padding: 30px 22px;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 220px;
+            max-width: 350px;
+            border: 1px solid #383838;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: #e8b45b;
+        }
+
+        .card .icon {
+            font-size: 38px;
+            margin-bottom: 18px;
+        }
+
+        .card h3 {
+            color: #e8b45b;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #bbb;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #101010;
+            color: #aaa;
+            margin-top: 30px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero {
+                padding: 60px 7%;
+                min-height: auto;
+            }
+
+            .hero-content h1 {
+                font-size: 38px;
+            }
+
+            .hero-content p {
+                font-size: 15px;
+            }
+
+            .features {
+                padding: 45px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">SAVOR.</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+    <!-- Home Hero Section -->
+    <section class="hero" id="about">
+        <div class="hero-content">
+
+            <h4>Welcome to SAVOR</h4>
+
+            <h1>
+                Manage Your Restaurant
+                <span>Smartly.</span>
+            </h1>
+
+            <p>
+                A smarter way to manage your restaurant.
+                Organize customer orders, manage table bookings,
+                monitor sales, and simplify daily operations
+                with one convenient platform.
+            </p>
+
+            <a href="login.html" class="btn">Get Started →</a>
+
+            <a href="#features" class="btn secondary-btn">
+                Explore Features
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+
+        <h2>Our <span>Features</span></h2>
+
+        <p class="section-text">
+            Everything you need to run your restaurant efficiently.
+        </p>
+
+        <div class="feature-container">
+
+            <div class="card">
+                <div class="icon">🍽️</div>
+                <h3>Order Management</h3>
+                <p>
+                    Manage customer orders and keep restaurant
+                    operations organized and efficient.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🪑</div>
+                <h3>Table Reservations</h3>
+                <p>
+                    Organize table bookings and monitor
+                    table availability with ease.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>Sales Reports</h3>
+                <p>
+                    Review sales information and understand
+                    your restaurant's performance.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 SAVOR Restaurant Management System.
+            All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
